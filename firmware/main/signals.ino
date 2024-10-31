@@ -73,7 +73,12 @@ class SignalPU {
     }
 
     void go() {
-
+      digitalWrite(yellow1, 0)
+      digitalWrite(yellow2, 0)
+      digitalWrite(yellow3, 0)
+      digitalWrite(yellow4, 0)
+      digitalWrite(red, 0);
+      digitalWrite(green, 1);
     }
 
     void go_through() {
@@ -81,7 +86,12 @@ class SignalPU {
     }
 
     void stop() {
-
+      digitalWrite(yellow1, 0)
+      digitalWrite(yellow2, 0)
+      digitalWrite(yellow3, 0)
+      digitalWrite(yellow4, 0)
+      digitalWrite(red, 1);
+      digitalWrite(green, 0);
     }
 
     void stop_and_move_forward() {
@@ -89,19 +99,39 @@ class SignalPU {
     }
 
     void passing_prohibited() {
-
+      digitalWrite(yellow1, 0)
+      digitalWrite(yellow2, 0)
+      digitalWrite(yellow3, 1)
+      digitalWrite(yellow4, 1)
+      digitalWrite(red, 0);
+      digitalWrite(green, 0);
     }
 
     void cautious_passing_allowed() {
-
+      digitalWrite(yellow1, 0)
+      digitalWrite(yellow2, 1)
+      digitalWrite(yellow3, 1)
+      digitalWrite(yellow4, 0)
+      digitalWrite(red, 0);
+      digitalWrite(green, 0);
     }
 
     void passing_allowed() {
-
+      digitalWrite(yellow1, 1)
+      digitalWrite(yellow2, 0)
+      digitalWrite(yellow3, 1)
+      digitalWrite(yellow4, 0)
+      digitalWrite(red, 0);
+      digitalWrite(green, 0);
     }
 
     void signal_canceled() {
-
+      digitalWrite(yellow1, 1)
+      digitalWrite(yellow2, 0)
+      digitalWrite(yellow3, 0)
+      digitalWrite(yellow4, 1)
+      digitalWrite(red, 0);
+      digitalWrite(green, 0);
     }
 
     void off() {
