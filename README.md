@@ -7,5 +7,7 @@ For reference of differnet types of signals, that this project implements, see t
 
 https://www.lundsten.dk/dk_signaling/sr-oversigt/sr-oversigt_e.html
 https://www.lundsten.dk/dk_signaling/sign_lex/lex/lex_h.htm
+https://www.lundsten.dk/dk_signaling/dksignal_dk.html
+
 
 Author: Lukas Andersson

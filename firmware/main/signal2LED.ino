@@ -13,13 +13,13 @@ class Signal2LED {
       pinMode(green, OUTPUT);
     }
 
-    void go() {
+    void proceed() {
       digitalWrite(red, 0);
       digitalWrite(green, 1);
     }
 
-    void go_through() {
-      
+    void proceed_through() {
+      // blink green led
     }
 
     void stop() {
@@ -27,8 +27,8 @@ class Signal2LED {
       digitalWrite(red, 1);
     }
 
-    void stop_and_move_forward() {
-
+    void stop_and_proceed() {
+      // blink red led
     }
 
     void off() {
